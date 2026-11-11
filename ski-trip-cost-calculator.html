@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ski Trip Cost Calculator — Per Person and Group Total | Kotlets</title>
+  <meta name="description" content="Free ski trip cost calculator: estimate lift passes, rentals, lessons, lodging and food per person and for the group. Ski days stay separate from nights.">
+  <link rel="canonical" href="https://mozght.github.io/kotlets/ski-trip-cost-calculator.html">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#17324D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kotlets">
+  <meta property="og:title" content="Ski Trip Cost Calculator — Per Person and Group Total | Kotlets">
+  <meta property="og:description" content="Free ski trip cost calculator: estimate lift passes, rentals, lessons, lodging and food per person and for the group. Ski days stay separate from nights.">
+  <meta property="og:url" content="https://mozght.github.io/kotlets/ski-trip-cost-calculator.html">
+  <meta property="og:image" content="https://mozght.github.io/kotlets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ski Trip Cost Calculator — Per Person and Group Total | Kotlets">
+  <meta name="twitter:description" content="Free ski trip cost calculator: estimate lift passes, rentals, lessons, lodging and food per person and for the group. Ski days stay separate from nights.">
+  <meta name="twitter:image" content="https://mozght.github.io/kotlets/img/og-image.png">
+  <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://mozght.github.io/kotlets/#org", "name": "Kotlets", "url": "https://mozght.github.io/kotlets/", "logo": "https://mozght.github.io/kotlets/img/logo.png", "description": "Digital travel and budget planners for Google Sheets and Excel, plus free trip calculators."}, {"@type": "WebSite", "@id": "https://mozght.github.io/kotlets/#site", "url": "https://mozght.github.io/kotlets/", "name": "Kotlets", "publisher": {"@id": "https://mozght.github.io/kotlets/#org"}}, {"@type": "WebApplication", "@id": "https://mozght.github.io/kotlets/ski-trip-cost-calculator.html#app", "name": "Ski Trip Cost Calculator", "url": "https://mozght.github.io/kotlets/ski-trip-cost-calculator.html", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "description": "Free ski trip cost calculator: estimate lift passes, rentals, lessons, lodging and food per person and for the group. Ski days stay separate from nights.", "publisher": {"@id": "https://mozght.github.io/kotlets/#org"}, "browserRequirements": "Requires JavaScript.", "isAccessibleForFree": true}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mozght.github.io/kotlets/"}, {"@type": "ListItem", "position": 2, "name": "Ski Trip Cost Calculator", "item": "https://mozght.github.io/kotlets/ski-trip-cost-calculator.html"}]}, {"@type": "FAQPage", "@id": "https://mozght.github.io/kotlets/ski-trip-cost-calculator.html#faq", "url": "https://mozght.github.io/kotlets/ski-trip-cost-calculator.html", "mainEntity": [{"@type": "Question", "name": "What should I include in a ski trip cost?", "acceptedAnswer": {"@type": "Answer", "text": "The core lines are lift passes, equipment rental or your own gear costs, lessons, lodging, food, and travel to the resort. Add insurance, parking or a resort tourist tax in “other”. This calculator keeps lift and rental “per day” rates on ski days, and lodging on nights, so a travel day without skiing is not charged a pass."}}, {"@type": "Question", "name": "How do I estimate lift passes and rentals?", "acceptedAnswer": {"@type": "Answer", "text": "Use official prices for your dates and ages, not last year’s brochure. A resort often has a trip pass that is cheaper than multiplying a one-day ticket. Rentals can be a trip package or a per-day rate — pick the unit on the form. If you already own skis or a board, leave rentals at zero and put any tune or bag fee in “other”."}}, {"@type": "Question", "name": "Are ski days the same as nights?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not. A Saturday-to-Saturday week is seven nights and often six ski days if you travel on the first and last day. Food still follows calendar days (nights + 1 by default). Lift and rental daily rates in this calculator use the ski-day figure."}}, {"@type": "Question", "name": "How do I get a cost per person?", "acceptedAnswer": {"@type": "Answer", "text": "Enter the group rates you were quoted, and the calculator totals everything and divides by the number of people. If one person is taking lessons and another is not, put lessons in as a per-person amount only for the people who are taking them — or use a group total for the lesson bill you were given."}}, {"@type": "Question", "name": "Which planner should I use after I have a number?", "acceptedAnswer": {"@type": "Answer", "text": "The Ski Trip Planner is the general spreadsheet. Use the Family Ski Trip Planner if you need ski school times and kids’ gear sizes, the Snowboard Trip Planner for board setup and park goals, and the Alps and Europe planner for euro budgets, ski-pass comparison and vignettes."}}]}]}</script>
+</head>
+<body>
+  <a class="skip" href="#calculator">Skip to calculator</a>
+  <div class="topbar" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/mascot.png" width="48" height="45" alt="">
+        <span class="brand-name">Kotlets</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul><li><a href="index.html">Home</a></li><li><a href="trip-budget-calculator.html">Trip budget</a></li><li><a href="group-trip-cost-splitter.html">Group split</a></li><li><a href="ski-trip-cost-calculator.html" aria-current="page">Ski trip cost</a></li><li><a href="vacation-savings-calculator.html">Vacation savings</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="kicker">Free calculator</p>
+      <h1>Ski Trip Cost Calculator</h1>
+      <p class="lede">Add lift passes, rentals, lessons, lodging, food and travel. Daily pass and rental rates use ski days; lodging uses nights — so a travel day is not charged a lift ticket.</p>
+    </section>
+    <div id="calculator" class="wrap">
+      <form class="calc-layout" id="ski-form" novalidate>
+        <div class="panel">
+          <h2>Trip details</h2>
+          <div class="fields">
+            <div class="field-row three">
+              <div class="field"><label for="ski-people">People</label>
+                <input id="ski-people" name="ski-people" type="number" min="1" step="1" value="2" required></div>
+              <div class="field"><label for="ski-days">Ski days</label>
+                <input id="ski-days" name="ski-days" type="number" min="0" step="1" value="6">
+                <span class="hint">Used for daily lift and rental rates</span></div>
+              <div class="field"><label for="ski-nights">Nights</label>
+                <input id="ski-nights" name="ski-nights" type="number" min="0" step="1" value="7"></div>
+            </div>
+            <div class="field"><label for="ski-days-cal">Calendar days (for food)</label>
+              <input id="ski-days-cal" name="ski-days-cal" type="number" min="0" step="1" value="8">
+              <span class="hint">Defaults to nights + 1</span></div>
+            <div class="field"><label for="ski-currency">Currency</label><select id="ski-currency" name="ski-currency"><option value="EUR" selected>Euro (€)</option><option value="USD">US dollar ($)</option><option value="GBP">Pound sterling (£)</option><option value="PLN">Polish zloty (zł)</option><option value="CHF">Swiss franc (CHF)</option></select></div>
+            <div class="field-row two">
+              <div class="field"><label for="lift">Lift passes</label>
+                <input id="lift" name="lift" type="number" min="0" step="0.01" value="55"></div>
+              <div class="field"><label for="liftMode">Pass unit</label><select id="liftMode" name="liftMode"><option value="per_person_per_day" selected>Per person per ski day</option><option value="per_person">Per person for the trip</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="rentals">Rentals</label>
+                <input id="rentals" name="rentals" type="number" min="0" step="0.01" value="40"></div>
+              <div class="field"><label for="rentalsMode">Rental unit</label><select id="rentalsMode" name="rentalsMode"><option value="per_person" selected>Per person for the trip</option><option value="per_person_per_day">Per person per ski day</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="lessons">Lessons</label>
+                <input id="lessons" name="lessons" type="number" min="0" step="0.01" value="80"></div>
+              <div class="field"><label for="lessonsMode">Lesson unit</label><select id="lessonsMode" name="lessonsMode"><option value="per_person" selected>Per person</option><option value="trip_total">Total for the group</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="ski-lodging">Lodging</label>
+                <input id="ski-lodging" name="ski-lodging" type="number" min="0" step="0.01" value="180"></div>
+              <div class="field"><label for="ski-lodgingMode">Lodging unit</label><select id="ski-lodgingMode" name="ski-lodgingMode"><option value="per_night_group" selected>Per night for the group</option><option value="per_person_per_night">Per person per night</option><option value="trip_total">Total for the trip</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="ski-food">Food</label>
+                <input id="ski-food" name="ski-food" type="number" min="0" step="0.01" value="30"></div>
+              <div class="field"><label for="ski-foodMode">Food unit</label><select id="ski-foodMode" name="ski-foodMode"><option value="per_person_per_day" selected>Per person per day</option><option value="trip_total">Total for the trip</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="ski-transport">Transport</label>
+                <input id="ski-transport" name="ski-transport" type="number" min="0" step="0.01" value="200"></div>
+              <div class="field"><label for="ski-transportMode">Transport unit</label><select id="ski-transportMode" name="ski-transportMode"><option value="trip_total" selected>Total for the group</option><option value="per_person">Per person</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="ski-other">Other / insurance</label>
+                <input id="ski-other" name="ski-other" type="number" min="0" step="0.01" value="25"></div>
+              <div class="field"><label for="ski-otherMode">Other unit</label><select id="ski-otherMode" name="ski-otherMode"><option value="trip_total">Total for the group</option><option value="per_person" selected>Per person</option></select></div>
+            </div>
+            <div class="field"><label for="ski-buffer">Buffer (%)</label>
+              <input id="ski-buffer" name="ski-buffer" type="number" min="0" max="100" step="1" value="10"></div>
+          </div>
+        </div>
+        <div class="results" id="ski-results" aria-live="polite">
+          <h2>Your ski trip estimate</h2>
+          <p>Enter the trip details to see a total.</p>
+        </div>
+      </form>
+    </div>
+    <section class="cta-box wrap">
+      <h2>Turn the estimate into a ski plan</h2>
+      <p>Keep the budget, itinerary and packing in a spreadsheet. Start with the <a href="https://www.etsy.com/listing/4603663745" rel="noopener" target="_blank">Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a>, or pick a specialist edition:</p>
+      <p class="btn-row">
+        <a class="btn" href="https://www.etsy.com/listing/4603663745" rel="noopener" target="_blank">Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a>
+        <a class="btn btn-ghost" href="https://www.etsy.com/listing/4604086456" rel="noopener" target="_blank">Family <span class="visually-hidden">(opens in a new tab)</span></a>
+        <a class="btn btn-ghost" href="https://www.etsy.com/listing/4604087324" rel="noopener" target="_blank">Snowboard <span class="visually-hidden">(opens in a new tab)</span></a>
+        <a class="btn btn-ghost" href="https://www.etsy.com/listing/4604064801" rel="noopener" target="_blank">Alps and Europe <span class="visually-hidden">(opens in a new tab)</span></a>
+      </p>
+    </section>
+    
+<article class="prose" id="guide">
+  <h2>How to estimate a ski trip without mixing up days and nights</h2>
+  <p>Ski trips have a habit of hiding their real price in different units. The pass is often per person per day, the chalet is per night for the group, lessons are a package, and the train is a one-off. If you add those figures as if they were the same kind of number, you will either under-count the week or scare yourself with a total that is too high. This ski trip cost calculator keeps the units explicit and then gives you a group total and a cost per person.</p>
+  <p>Begin with people, <strong>ski days</strong> and <strong>nights</strong>. They are not the same. A Saturday-to-Saturday week is seven nights. If you travel on the first and last day, you may only ski six days. Lift passes and rental “per day” rates in this form use ski days. Lodging uses nights. Food uses calendar days, which default to nights + 1 — because you still eat on the travel days.</p>
+  <h3>Passes, rentals and lessons</h3>
+  <p>For lift passes, prefer an official price for your dates and age band over a remembered number from a previous season. Many resorts sell a trip or 6-day pass that is cheaper than six times a one-day ticket. If you already have that package price, choose “per person for the trip”. If you only have a daily rate, choose “per person per ski day”. The same logic applies to rentals: a week package is a trip rate; a shop that charges each day is a daily rate. If you bring your own skis or board, leave rentals at zero and put a tune, bag or insurance fee in “other”.</p>
+  <p>Lessons are often the line that applies to only part of the group. If two of four people are in ski school, do not multiply a lesson price by four. Either enter a group total for the lesson bill, or a per-person amount that already reflects only the people taking lessons. Child and adult prices are usually different, so add them before you type the figure.</p>
+  <h3>Lodging, food, travel and a buffer</h3>
+  <p>Chalet and apartment quotes are typically for the whole place per night, or for the week as a single invoice — both of those modes are in the form. Hotel rooms are sometimes priced per person per night. Food in a self-catered apartment is lower than in a resort restaurant town; be honest about which kind of trip you are actually taking. Travel should include the journey to the resort and the last transfer, not only the headline flight or train.</p>
+  <p>A 10% buffer covers tourist tax, parking, lockers and the day the weather pushes you into a café. Raise it if you have not booked the pass yet. The results card shows the group total, the cost per person, and a per-ski-day figure for the whole group so you can compare resorts on the same basis. When you are ready to keep the plan — budget, itinerary, packing, and a comparison of passes or resorts — open the <a href="https://www.etsy.com/listing/4603663745" rel="noopener" target="_blank">Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a>, or the family, snowboard or Alps editions if those are a better fit.</p>
+</article>
+
+    <section class='faq wrap' id='faq' aria-labelledby='faq-h'><h2 id='faq-h'>Frequently asked questions</h2><details><summary>What should I include in a ski trip cost?</summary><p>The core lines are lift passes, equipment rental or your own gear costs, lessons, lodging, food, and travel to the resort. Add insurance, parking or a resort tourist tax in “other”. This calculator keeps lift and rental “per day” rates on ski days, and lodging on nights, so a travel day without skiing is not charged a pass.</p></details><details><summary>How do I estimate lift passes and rentals?</summary><p>Use official prices for your dates and ages, not last year’s brochure. A resort often has a trip pass that is cheaper than multiplying a one-day ticket. Rentals can be a trip package or a per-day rate — pick the unit on the form. If you already own skis or a board, leave rentals at zero and put any tune or bag fee in “other”.</p></details><details><summary>Are ski days the same as nights?</summary><p>Usually not. A Saturday-to-Saturday week is seven nights and often six ski days if you travel on the first and last day. Food still follows calendar days (nights + 1 by default). Lift and rental daily rates in this calculator use the ski-day figure.</p></details><details><summary>How do I get a cost per person?</summary><p>Enter the group rates you were quoted, and the calculator totals everything and divides by the number of people. If one person is taking lessons and another is not, put lessons in as a per-person amount only for the people who are taking them — or use a group total for the lesson bill you were given.</p></details><details><summary>Which planner should I use after I have a number?</summary><p>The <a href="https://www.etsy.com/listing/4603663745" rel="noopener" target="_blank">Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a> is the general spreadsheet. Use the <a href="https://www.etsy.com/listing/4604086456" rel="noopener" target="_blank">Family Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a> if you need ski school times and kids’ gear sizes, the <a href="https://www.etsy.com/listing/4604087324" rel="noopener" target="_blank">Snowboard Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a> for board setup and park goals, and the <a href="https://www.etsy.com/listing/4604064801" rel="noopener" target="_blank">Alps and Europe Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a> for euro budgets, ski-pass comparison and vignettes.</p></details></section>
+    <section class="related wrap" aria-labelledby="related-h"><h2 id="related-h">Related calculators</h2><ul><li><a href="trip-budget-calculator.html">Trip Budget Calculator — a general holiday budget</a></li><li><a href="group-trip-cost-splitter.html">Group Trip Cost Splitter — settle the chalet</a></li><li><a href="vacation-savings-calculator.html">Vacation Savings Calculator — monthly ski fund</a></li></ul></section>
+  </main>
+
+  <footer class="site-footer">
+    <svg class="mtn" viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" preserveAspectRatio="none">
+  <path fill="#BAA8D6" d="M0 180V95l150-55 160 50 200-80 180 70 190-65 180 55 140-45V180Z"/>
+  <path fill="#17324D" d="M0 180V125l120-55 160 58 180-75 170 65 190-60 170 62 210-72V180Z"/>
+  <path fill="#fff" d="M150 40l-32 24 32 8 30-10zM510 10l-40 28 40 10 38-12zM880 20l-36 26 36 8 34-10zM460 53l-34 22 34 8 32-9zM840 55l-32 20 32 7 30-8z"/>
+</svg>
+    <div class="foot-body">
+      <div class="foot-inner">
+        <div class="foot-grid">
+          <div>
+            <h2>Calculators</h2>
+            <ul><li><a href="index.html">Home</a></li><li><a href="trip-budget-calculator.html">Trip Budget Calculator</a></li><li><a href="group-trip-cost-splitter.html">Group Trip Cost Splitter</a></li><li><a href="ski-trip-cost-calculator.html">Ski Trip Cost Calculator</a></li><li><a href="vacation-savings-calculator.html">Vacation Savings Calculator</a></li></ul>
+          </div>
+          <div>
+            <h2>Planners on Etsy</h2>
+            <ul>
+              <li><a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4614656729/2027-budget-planner-google-sheets-excel" rel="noopener" target="_blank">2027 Budget Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4603663745" rel="noopener" target="_blank">Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604086456" rel="noopener" target="_blank">Family Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604087324" rel="noopener" target="_blank">Snowboard Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604064801" rel="noopener" target="_blank">Alps and Europe Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>About</h2>
+            <p class="fine" style="margin-top:0">Kotlets makes editable Google Sheets and Excel planners, with matching printable pages, for trips and household budgets.</p>
+          </div>
+        </div>
+        <p class="fine" id="privacy">Privacy: this is a static site. Calculator inputs stay in your browser and are not sent to a server. There are no accounts, and no analytics or tracking cookies on these pages yet.</p>
+        <p class="fine">Pages and calculators on this site were created with help from AI tools. The numbers are estimates for personal planning only — they are not financial, tax or travel advice. Always check official prices, exchange rates and opening dates before you book.</p>
+        <p class="copy">© <span id="year">2026</span> Kotlets. Instant digital download planners on Etsy.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/calc.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

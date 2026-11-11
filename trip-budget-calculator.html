@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trip Budget Calculator — Estimate Your Vacation Cost | Kotlets</title>
+  <meta name="description" content="Free trip budget calculator: estimate lodging, transport, food and activities for your group, with a per-person total and an optional buffer. No sign-up.">
+  <link rel="canonical" href="https://mozght.github.io/kotlets/trip-budget-calculator.html">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#17324D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kotlets">
+  <meta property="og:title" content="Trip Budget Calculator — Estimate Your Vacation Cost | Kotlets">
+  <meta property="og:description" content="Free trip budget calculator: estimate lodging, transport, food and activities for your group, with a per-person total and an optional buffer. No sign-up.">
+  <meta property="og:url" content="https://mozght.github.io/kotlets/trip-budget-calculator.html">
+  <meta property="og:image" content="https://mozght.github.io/kotlets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trip Budget Calculator — Estimate Your Vacation Cost | Kotlets">
+  <meta name="twitter:description" content="Free trip budget calculator: estimate lodging, transport, food and activities for your group, with a per-person total and an optional buffer. No sign-up.">
+  <meta name="twitter:image" content="https://mozght.github.io/kotlets/img/og-image.png">
+  <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://mozght.github.io/kotlets/#org", "name": "Kotlets", "url": "https://mozght.github.io/kotlets/", "logo": "https://mozght.github.io/kotlets/img/logo.png", "description": "Digital travel and budget planners for Google Sheets and Excel, plus free trip calculators."}, {"@type": "WebSite", "@id": "https://mozght.github.io/kotlets/#site", "url": "https://mozght.github.io/kotlets/", "name": "Kotlets", "publisher": {"@id": "https://mozght.github.io/kotlets/#org"}}, {"@type": "WebApplication", "@id": "https://mozght.github.io/kotlets/trip-budget-calculator.html#app", "name": "Trip Budget Calculator", "url": "https://mozght.github.io/kotlets/trip-budget-calculator.html", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "description": "Free trip budget calculator: estimate lodging, transport, food and activities for your group, with a per-person total and an optional buffer. No sign-up.", "publisher": {"@id": "https://mozght.github.io/kotlets/#org"}, "browserRequirements": "Requires JavaScript.", "isAccessibleForFree": true}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mozght.github.io/kotlets/"}, {"@type": "ListItem", "position": 2, "name": "Trip Budget Calculator", "item": "https://mozght.github.io/kotlets/trip-budget-calculator.html"}]}, {"@type": "FAQPage", "@id": "https://mozght.github.io/kotlets/trip-budget-calculator.html#faq", "url": "https://mozght.github.io/kotlets/trip-budget-calculator.html", "mainEntity": [{"@type": "Question", "name": "How do I calculate a trip budget?", "acceptedAnswer": {"@type": "Answer", "text": "Add lodging, transport, food, activities and a little else, then divide by the number of travellers. In this calculator, lodging can be a nightly rate or a trip total, food is usually a per-person daily amount times calendar days (nights + 1), and you can add a percentage buffer for tips, snacks and price changes."}}, {"@type": "Question", "name": "Should I budget by nights or by days?", "acceptedAnswer": {"@type": "Answer", "text": "Use nights for lodging and days for food. A Friday-to-Monday trip is three nights and four days, so you eat more times than you pay for a hotel. The calculator sets days to nights + 1 until you change it."}}, {"@type": "Question", "name": "What percentage should I add as a buffer?", "acceptedAnswer": {"@type": "Answer", "text": "Ten percent is a sensible starting point for a first estimate. Use more if prices are in another currency, if you have not booked yet, or if the destination is heavy on tips and cash extras. Use less if most costs are already prepaid."}}, {"@type": "Question", "name": "Does this trip budget calculator convert currencies?", "acceptedAnswer": {"@type": "Answer", "text": "No. Pick one currency and enter every amount in that currency. If a flight is in euros and lodging is in dollars, convert one of them first using a rate you trust, then enter both here. The Kotlets Travel Planner lets you log each booking in its own currency and convert with your own rates."}}, {"@type": "Question", "name": "Is a prepaid flight part of the daily budget?", "acceptedAnswer": {"@type": "Answer", "text": "Include prepaid flights and lodging in the trip total so you know the real cost, but do not divide them into a daily spending cap. Use the on-the-ground lines — food, local transport, activities — when you decide how much cash or card budget to take each day."}}]}]}</script>
+</head>
+<body>
+  <a class="skip" href="#calculator">Skip to calculator</a>
+  <div class="topbar" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/mascot.png" width="48" height="45" alt="">
+        <span class="brand-name">Kotlets</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul><li><a href="index.html">Home</a></li><li><a href="trip-budget-calculator.html" aria-current="page">Trip budget</a></li><li><a href="group-trip-cost-splitter.html">Group split</a></li><li><a href="ski-trip-cost-calculator.html">Ski trip cost</a></li><li><a href="vacation-savings-calculator.html">Vacation savings</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="kicker">Free calculator</p>
+      <h1>Trip Budget Calculator</h1>
+      <p class="lede">Estimate lodging, transport, food and activities for a group trip, then see the total, the cost per person, and a per-day figure. Add a buffer if you have not booked yet.</p>
+    </section>
+    <div id="calculator" class="wrap">
+      <form class="calc-layout" id="trip-form" novalidate>
+        <div class="panel">
+          <h2>Trip details</h2>
+          <div class="fields">
+            <div class="field-row three">
+              <div class="field"><label for="travelers">Travellers</label>
+                <input id="travelers" name="travelers" type="number" min="1" step="1" value="3" required></div>
+              <div class="field"><label for="nights">Nights</label>
+                <input id="nights" name="nights" type="number" min="0" step="1" value="9" required>
+                <span class="hint">Used for lodging</span></div>
+              <div class="field"><label for="days">Days</label>
+                <input id="days" name="days" type="number" min="0" step="1" value="10">
+                <span class="hint">Defaults to nights + 1; used for food</span></div>
+            </div>
+            <div class="field"><label for="currency">Currency</label>
+              <select id="currency" name="currency"><option value="EUR" selected>Euro (€)</option><option value="USD">US dollar ($)</option><option value="GBP">Pound sterling (£)</option><option value="PLN">Polish zloty (zł)</option><option value="CHF">Swiss franc (CHF)</option></select>
+              <span class="hint">No live conversion — enter every amount in this currency.</span></div>
+            <div class="field-row two">
+              <div class="field"><label for="lodging">Lodging</label>
+                <input id="lodging" name="lodging" type="number" min="0" step="0.01" value="140"></div>
+              <div class="field"><label for="lodgingMode">Lodging unit</label><select id="lodgingMode" name="lodgingMode"><option value="per_night_group" selected>Per night for the group</option><option value="per_person_per_night">Per person per night</option><option value="trip_total">Total for the trip</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="transport">Transport</label>
+                <input id="transport" name="transport" type="number" min="0" step="0.01" value="280"></div>
+              <div class="field"><label for="transportMode">Transport unit</label><select id="transportMode" name="transportMode"><option value="trip_total">Total for the group</option><option value="per_person" selected>Per person</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="food">Food</label>
+                <input id="food" name="food" type="number" min="0" step="0.01" value="35"></div>
+              <div class="field"><label for="foodMode">Food unit</label><select id="foodMode" name="foodMode"><option value="per_person_per_day" selected>Per person per day</option><option value="trip_total">Total for the trip</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="activities">Activities</label>
+                <input id="activities" name="activities" type="number" min="0" step="0.01" value="180"></div>
+              <div class="field"><label for="activitiesMode">Activities unit</label><select id="activitiesMode" name="activitiesMode"><option value="trip_total" selected>Total for the group</option><option value="per_person">Per person</option></select></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="other">Other</label>
+                <input id="other" name="other" type="number" min="0" step="0.01" value="40"></div>
+              <div class="field"><label for="otherMode">Other unit</label><select id="otherMode" name="otherMode"><option value="trip_total" selected>Total for the group</option><option value="per_person">Per person</option></select></div>
+            </div>
+            <div class="field"><label for="bufferPct">Buffer (%)</label>
+              <input id="bufferPct" name="bufferPct" type="number" min="0" max="100" step="1" value="10">
+              <span class="hint">Added on top of the subtotal. Use 0 if everything is already booked.</span></div>
+          </div>
+        </div>
+        <div class="results" id="trip-results" aria-live="polite">
+          <h2>Your trip estimate</h2>
+          <p>Enter the trip details to see a total.</p>
+        </div>
+      </form>
+    </div>
+    <section class="cta-box wrap">
+      <h2>Keep the plan in a spreadsheet</h2>
+      <p>The <a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a> has a trip overview, a budget in five currencies, bookings that you can mark as cancelled (those rows stay on the list but drop out of totals), an itinerary, packing, documents and a group cost split — plus a printable PDF.</p>
+      <p class="btn-row"><a class="btn" href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Get the Travel Planner on Etsy <span class="visually-hidden">(opens in a new tab)</span></a></p>
+    </section>
+    
+<article class="prose" id="guide">
+  <h2>How to build a trip budget that you will actually use</h2>
+  <p>A useful trip budget is not a single scary number. It is a short list of the costs that actually move: where you sleep, how you get there, what you eat, and what you have already decided to do. This trip budget calculator is built around those four lines, plus an optional “other” line and a buffer. Work through them once before you book, then again after the big tickets are paid, so the remaining figure is what you still have to spend on the ground.</p>
+  <p>Start with travellers and dates. Lodging almost always follows <strong>nights</strong>. Food almost always follows <strong>days</strong>. A Friday-to-Monday city break is three nights in a room and four days of meals. The form fills days with nights + 1 automatically; change it if you arrive late and skip a meal day, or if you want to count only the days you will eat out.</p>
+  <h3>Lodging, transport, food and activities</h3>
+  <p>Put the room or apartment rate in the unit you were actually quoted. “Per night for the group” is the usual hotel or whole-apartment price. “Per person per night” is handy for hostels and some packages. “Total for the trip” is right when you already have a paid booking or a fixed invoice.</p>
+  <p>Transport is often one or two big tickets (flights, long-distance trains) plus smaller local costs. If you only know the price per person, use that mode and the calculator will multiply by the group. If you have a family ticket or a shared car, use a group total. Keep airport transfers in this line or in “other”, but do not forget them — they are a common hole in first-pass budgets.</p>
+  <p>Food is the line people under-estimate. A per-person, per-day average that includes coffee, lunch, dinner and a drink is more honest than a restaurant dinner-only figure. If breakfast is in the room rate, lower the daily food amount rather than pretending those meals are free. Activities can be a group total (a tour you will book once) or a per-person figure (museum cards or a class).</p>
+  <h3>Add a buffer, then decide what is prepaid</h3>
+  <p>A 10% buffer is a reasonable default for a first estimate. Increase it when you have not booked yet, when prices are in a currency you do not use every day, or when tips and cash extras are likely. Decrease it when flights and lodging are already paid and you are only planning pocket money.</p>
+  <p>Once the total looks real, split it mentally in two: prepaid (already on a card, or about to be) and on-the-ground (food, local transport, tickets you will buy there). The prepaid part should sit in the trip total so you know what the holiday really costs. It should not sit in the daily spending cap you take to dinner. Per-person and per-day figures on the results card help you have that conversation with the people you travel with.</p>
+  <p>The calculator does not fetch exchange rates or hotel prices — it runs in your browser, and the amounts you type stay on your device. If you need a record you can share, change and come back to, with bookings, a day-by-day itinerary, packing and a group split, take the same numbers into the <a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Kotlets Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a> for Google Sheets and Excel.</p>
+</article>
+
+    <section class='faq wrap' id='faq' aria-labelledby='faq-h'><h2 id='faq-h'>Frequently asked questions</h2><details><summary>How do I calculate a trip budget?</summary><p>Add lodging, transport, food, activities and a little else, then divide by the number of travellers. In this calculator, lodging can be a nightly rate or a trip total, food is usually a per-person daily amount times calendar days (nights + 1), and you can add a percentage buffer for tips, snacks and price changes.</p></details><details><summary>Should I budget by nights or by days?</summary><p>Use nights for lodging and days for food. A Friday-to-Monday trip is three nights and four days, so you eat more times than you pay for a hotel. The calculator sets days to nights + 1 until you change it.</p></details><details><summary>What percentage should I add as a buffer?</summary><p>Ten percent is a sensible starting point for a first estimate. Use more if prices are in another currency, if you have not booked yet, or if the destination is heavy on tips and cash extras. Use less if most costs are already prepaid.</p></details><details><summary>Does this trip budget calculator convert currencies?</summary><p>No. Pick one currency and enter every amount in that currency. If a flight is in euros and lodging is in dollars, convert one of them first using a rate you trust, then enter both here. The Kotlets Travel Planner lets you log each booking in its own currency and convert with your own rates.</p></details><details><summary>Is a prepaid flight part of the daily budget?</summary><p>Include prepaid flights and lodging in the trip total so you know the real cost, but do not divide them into a daily spending cap. Use the on-the-ground lines — food, local transport, activities — when you decide how much cash or card budget to take each day. You can keep prepaid bookings and day-to-day expenses on separate tabs in the <a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a>.</p></details></section>
+    <section class="related wrap" aria-labelledby="related-h"><h2 id="related-h">Related calculators</h2><ul><li><a href="group-trip-cost-splitter.html">Group Trip Cost Splitter — who owes whom</a></li><li><a href="vacation-savings-calculator.html">Vacation Savings Calculator — monthly amount needed</a></li><li><a href="ski-trip-cost-calculator.html">Ski Trip Cost Calculator — passes, rentals, lodging</a></li></ul></section>
+  </main>
+
+  <footer class="site-footer">
+    <svg class="mtn" viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" preserveAspectRatio="none">
+  <path fill="#BAA8D6" d="M0 180V95l150-55 160 50 200-80 180 70 190-65 180 55 140-45V180Z"/>
+  <path fill="#17324D" d="M0 180V125l120-55 160 58 180-75 170 65 190-60 170 62 210-72V180Z"/>
+  <path fill="#fff" d="M150 40l-32 24 32 8 30-10zM510 10l-40 28 40 10 38-12zM880 20l-36 26 36 8 34-10zM460 53l-34 22 34 8 32-9zM840 55l-32 20 32 7 30-8z"/>
+</svg>
+    <div class="foot-body">
+      <div class="foot-inner">
+        <div class="foot-grid">
+          <div>
+            <h2>Calculators</h2>
+            <ul><li><a href="index.html">Home</a></li><li><a href="trip-budget-calculator.html">Trip Budget Calculator</a></li><li><a href="group-trip-cost-splitter.html">Group Trip Cost Splitter</a></li><li><a href="ski-trip-cost-calculator.html">Ski Trip Cost Calculator</a></li><li><a href="vacation-savings-calculator.html">Vacation Savings Calculator</a></li></ul>
+          </div>
+          <div>
+            <h2>Planners on Etsy</h2>
+            <ul>
+              <li><a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4614656729/2027-budget-planner-google-sheets-excel" rel="noopener" target="_blank">2027 Budget Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4603663745" rel="noopener" target="_blank">Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604086456" rel="noopener" target="_blank">Family Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604087324" rel="noopener" target="_blank">Snowboard Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604064801" rel="noopener" target="_blank">Alps and Europe Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>About</h2>
+            <p class="fine" style="margin-top:0">Kotlets makes editable Google Sheets and Excel planners, with matching printable pages, for trips and household budgets.</p>
+          </div>
+        </div>
+        <p class="fine" id="privacy">Privacy: this is a static site. Calculator inputs stay in your browser and are not sent to a server. There are no accounts, and no analytics or tracking cookies on these pages yet.</p>
+        <p class="fine">Pages and calculators on this site were created with help from AI tools. The numbers are estimates for personal planning only — they are not financial, tax or travel advice. Always check official prices, exchange rates and opening dates before you book.</p>
+        <p class="copy">© <span id="year">2026</span> Kotlets. Instant digital download planners on Etsy.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/calc.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

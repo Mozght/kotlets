@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vacation Savings Calculator — How Much to Save Each Month | Kotlets</title>
+  <meta name="description" content="Free vacation savings calculator: see how much to save each month and each week to hit a holiday target by a date, and check if a planned transfer is on track.">
+  <link rel="canonical" href="https://mozght.github.io/kotlets/vacation-savings-calculator.html">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#17324D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kotlets">
+  <meta property="og:title" content="Vacation Savings Calculator — How Much to Save Each Month | Kotlets">
+  <meta property="og:description" content="Free vacation savings calculator: see how much to save each month and each week to hit a holiday target by a date, and check if a planned transfer is on track.">
+  <meta property="og:url" content="https://mozght.github.io/kotlets/vacation-savings-calculator.html">
+  <meta property="og:image" content="https://mozght.github.io/kotlets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vacation Savings Calculator — How Much to Save Each Month | Kotlets">
+  <meta name="twitter:description" content="Free vacation savings calculator: see how much to save each month and each week to hit a holiday target by a date, and check if a planned transfer is on track.">
+  <meta name="twitter:image" content="https://mozght.github.io/kotlets/img/og-image.png">
+  <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://mozght.github.io/kotlets/#org", "name": "Kotlets", "url": "https://mozght.github.io/kotlets/", "logo": "https://mozght.github.io/kotlets/img/logo.png", "description": "Digital travel and budget planners for Google Sheets and Excel, plus free trip calculators."}, {"@type": "WebSite", "@id": "https://mozght.github.io/kotlets/#site", "url": "https://mozght.github.io/kotlets/", "name": "Kotlets", "publisher": {"@id": "https://mozght.github.io/kotlets/#org"}}, {"@type": "WebApplication", "@id": "https://mozght.github.io/kotlets/vacation-savings-calculator.html#app", "name": "Vacation Savings Calculator", "url": "https://mozght.github.io/kotlets/vacation-savings-calculator.html", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "description": "Free vacation savings calculator: see how much to save each month and each week to hit a holiday target by a date, and check if a planned transfer is on track.", "publisher": {"@id": "https://mozght.github.io/kotlets/#org"}, "browserRequirements": "Requires JavaScript.", "isAccessibleForFree": true}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mozght.github.io/kotlets/"}, {"@type": "ListItem", "position": 2, "name": "Vacation Savings Calculator", "item": "https://mozght.github.io/kotlets/vacation-savings-calculator.html"}]}, {"@type": "FAQPage", "@id": "https://mozght.github.io/kotlets/vacation-savings-calculator.html#faq", "url": "https://mozght.github.io/kotlets/vacation-savings-calculator.html", "mainEntity": [{"@type": "Question", "name": "How much should I save each month for a vacation?", "acceptedAnswer": {"@type": "Answer", "text": "Subtract what you have already saved from the target, then divide the remainder by the time left until your date. This calculator uses average calendar months (365.25 ÷ 12 = 30.4375 days), so a full year is exactly 12 months, and it also shows a weekly amount."}}, {"@type": "Question", "name": "What if I already know how much I can save each month?", "acceptedAnswer": {"@type": "Answer", "text": "Type that amount in the optional monthly field. The calculator will project the date you would hit the target and say whether that is on track for your deadline. If you are behind, it shows the shortfall on the target date."}}, {"@type": "Question", "name": "Should I include flights I have already paid for?", "acceptedAnswer": {"@type": "Answer", "text": "If the target is “what I still need for the trip”, do not include amounts already paid — put those in “already saved”, or leave them out of the target. If the target is “what the whole holiday will cost”, keep the full figure and count prepaid tickets as already saved."}}, {"@type": "Question", "name": "What date should I use as the start?", "acceptedAnswer": {"@type": "Answer", "text": "Use today if you will make the first transfer now. Use the date of your next payday if that is when the standing order starts. The time left is measured in days between the two calendar dates you enter, so the start date matters."}}, {"@type": "Question", "name": "How is this different from a travel fund in a budget planner?", "acceptedAnswer": {"@type": "Answer", "text": "This page answers “how much, by when”. A travel fund in a household budget also tracks the transfers you actually make, the starting pot, and whether you are still on track as the months go by. The 2027 Budget Planner has a dedicated travel / trip fund for that."}}]}]}</script>
+</head>
+<body>
+  <a class="skip" href="#calculator">Skip to calculator</a>
+  <div class="topbar" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/mascot.png" width="48" height="45" alt="">
+        <span class="brand-name">Kotlets</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul><li><a href="index.html">Home</a></li><li><a href="trip-budget-calculator.html">Trip budget</a></li><li><a href="group-trip-cost-splitter.html">Group split</a></li><li><a href="ski-trip-cost-calculator.html">Ski trip cost</a></li><li><a href="vacation-savings-calculator.html" aria-current="page">Vacation savings</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="kicker">Free calculator</p>
+      <h1>Vacation Savings Calculator</h1>
+      <p class="lede">Set a target, a date and what you have already saved. See the monthly and weekly amount you need, or test a standing order to find out if you are on track.</p>
+    </section>
+    <div id="calculator" class="wrap">
+      <form class="calc-layout" id="savings-form" novalidate>
+        <div class="panel">
+          <h2>Your target</h2>
+          <div class="fields">
+            <div class="field"><label for="save-currency">Currency</label><select id="save-currency" name="save-currency"><option value="EUR" selected>Euro (€)</option><option value="USD">US dollar ($)</option><option value="GBP">Pound sterling (£)</option><option value="PLN">Polish zloty (zł)</option><option value="CHF">Swiss franc (CHF)</option></select></div>
+            <div class="field-row two">
+              <div class="field"><label for="save-target">Target amount</label>
+                <input id="save-target" name="save-target" type="number" min="0" step="0.01" value="4500" required></div>
+              <div class="field"><label for="save-saved">Already saved</label>
+                <input id="save-saved" name="save-saved" type="number" min="0" step="0.01" value="1200"></div>
+            </div>
+            <div class="field-row two">
+              <div class="field"><label for="save-from">Start date</label>
+                <input id="save-from" name="save-from" type="date" value="2026-11-11" required>
+                <span class="hint">Use today, or your next payday</span></div>
+              <div class="field"><label for="save-to">Target date</label>
+                <input id="save-to" name="save-to" type="date" value="2028-02-12" required></div>
+            </div>
+            <div class="field"><label for="save-monthly">Planned monthly transfer (optional)</label>
+              <input id="save-monthly" name="save-monthly" type="number" min="0" step="0.01" value="250" placeholder="Leave blank to skip">
+              <span class="hint">If you fill this in, you will also see a projected date and an on-track check.</span></div>
+          </div>
+        </div>
+        <div class="results" id="savings-results" aria-live="polite">
+          <h2>Vacation savings plan</h2>
+          <p>Enter a target and a date to see a monthly amount.</p>
+        </div>
+      </form>
+    </div>
+    <section class="cta-box wrap">
+      <h2>Track the fund through the year</h2>
+      <p>The <a href="https://www.etsy.com/listing/4614656729/2027-budget-planner-google-sheets-excel" rel="noopener" target="_blank">2027 Budget Planner <span class="visually-hidden">(opens in a new tab)</span></a> has a dedicated travel / trip fund: a target, a date, a starting pot, saved-so-far from your transactions, and an on-track check, next to monthly budgets and other savings goals.</p>
+      <p class="btn-row"><a class="btn" href="https://www.etsy.com/listing/4614656729/2027-budget-planner-google-sheets-excel" rel="noopener" target="_blank">Get the 2027 Budget Planner on Etsy <span class="visually-hidden">(opens in a new tab)</span></a></p>
+    </section>
+    
+<article class="prose" id="guide">
+  <h2>How to work out a monthly vacation savings amount</h2>
+  <p>The reliable way to save for a holiday is to give it a number and a date, then turn that into a transfer you can actually make. This vacation savings calculator does that piece of arithmetic. It takes a target, anything you have already set aside, and the date you want the money ready, and it returns a monthly and a weekly amount. If you already know what you can spare each month, it will also tell you whether that is enough.</p>
+  <p>Be precise about the <strong>target</strong>. Some people mean “the remaining cost of a trip I have already partly booked”. Others mean “a pot I want in the bank before I book anything”. Both are valid, but they are different numbers. If flights are already paid, either drop them from the target or count them in “already saved” so you do not save for them twice. Use the <a href="trip-budget-calculator.html">trip budget</a> and <a href="ski-trip-cost-calculator.html">ski trip cost</a> calculators first if you still need a realistic trip total.</p>
+  <h3>Time left, months and weeks</h3>
+  <p>Time left is the number of days between the start date and the target date. The start date defaults to today; change it to your next payday if the first transfer will not leave the account until then. Months are average calendar months of 365.25 ÷ 12 = 30.4375 days, so a 365-day year is 12 months and a leap year is only a fraction longer. That is easier to plan with than counting month-starts of uneven length. Weekly amounts use the same day count divided by seven.</p>
+  <p>If the target date is today or in the past, the calculator does not spread the remainder over a fictional month — it tells you the remaining amount is due now. If you have already reached the target, it says so and does not invent a monthly figure.</p>
+  <h3>On-track checks</h3>
+  <p>The optional monthly field is there for a standing order you already have, or for a number you can afford that may not match the “needed” figure. The tool projects a hit date from that amount (using the same average month) and compares it with your deadline. If you would arrive late, you will also see the shortfall on the target date — useful when you are deciding whether to push the trip, raise the transfer, or trim the budget.</p>
+  <p>A calculator cannot watch the transfers for you. Once you have a monthly amount, the habit that works is a named pot (a sub-account or a line in a budget) and an automatic transfer on payday. The <a href="https://www.etsy.com/listing/4614656729/2027-budget-planner-google-sheets-excel" rel="noopener" target="_blank">2027 Budget Planner <span class="visually-hidden">(opens in a new tab)</span></a> has a dedicated travel / trip fund with a target, a date, a starting pot, “saved so far” from your transactions, and an on-track check — so the same holiday number lives next to the rest of the household year.</p>
+</article>
+
+    <section class='faq wrap' id='faq' aria-labelledby='faq-h'><h2 id='faq-h'>Frequently asked questions</h2><details><summary>How much should I save each month for a vacation?</summary><p>Subtract what you have already saved from the target, then divide the remainder by the time left until your date. This calculator uses average calendar months (365.25 ÷ 12 = 30.4375 days), so a full year is exactly 12 months, and it also shows a weekly amount.</p></details><details><summary>What if I already know how much I can save each month?</summary><p>Type that amount in the optional monthly field. The calculator will project the date you would hit the target and say whether that is on track for your deadline. If you are behind, it shows the shortfall on the target date.</p></details><details><summary>Should I include flights I have already paid for?</summary><p>If the target is “what I still need for the trip”, do not include amounts already paid — put those in “already saved”, or leave them out of the target. If the target is “what the whole holiday will cost”, keep the full figure and count prepaid tickets as already saved.</p></details><details><summary>What date should I use as the start?</summary><p>Use today if you will make the first transfer now. Use the date of your next payday if that is when the standing order starts. The time left is measured in days between the two calendar dates you enter, so the start date matters.</p></details><details><summary>How is this different from a travel fund in a budget planner?</summary><p>This page answers “how much, by when”. A travel fund in a household budget also tracks the transfers you actually make, the starting pot, and whether you are still on track as the months go by. The <a href="https://www.etsy.com/listing/4614656729/2027-budget-planner-google-sheets-excel" rel="noopener" target="_blank">2027 Budget Planner <span class="visually-hidden">(opens in a new tab)</span></a> has a dedicated travel / trip fund for that.</p></details></section>
+    <section class="related wrap" aria-labelledby="related-h"><h2 id="related-h">Related calculators</h2><ul><li><a href="trip-budget-calculator.html">Trip Budget Calculator — set a realistic target</a></li><li><a href="ski-trip-cost-calculator.html">Ski Trip Cost Calculator — winter trip target</a></li><li><a href="group-trip-cost-splitter.html">Group Trip Cost Splitter — share the cost later</a></li></ul></section>
+  </main>
+
+  <footer class="site-footer">
+    <svg class="mtn" viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" preserveAspectRatio="none">
+  <path fill="#BAA8D6" d="M0 180V95l150-55 160 50 200-80 180 70 190-65 180 55 140-45V180Z"/>
+  <path fill="#17324D" d="M0 180V125l120-55 160 58 180-75 170 65 190-60 170 62 210-72V180Z"/>
+  <path fill="#fff" d="M150 40l-32 24 32 8 30-10zM510 10l-40 28 40 10 38-12zM880 20l-36 26 36 8 34-10zM460 53l-34 22 34 8 32-9zM840 55l-32 20 32 7 30-8z"/>
+</svg>
+    <div class="foot-body">
+      <div class="foot-inner">
+        <div class="foot-grid">
+          <div>
+            <h2>Calculators</h2>
+            <ul><li><a href="index.html">Home</a></li><li><a href="trip-budget-calculator.html">Trip Budget Calculator</a></li><li><a href="group-trip-cost-splitter.html">Group Trip Cost Splitter</a></li><li><a href="ski-trip-cost-calculator.html">Ski Trip Cost Calculator</a></li><li><a href="vacation-savings-calculator.html">Vacation Savings Calculator</a></li></ul>
+          </div>
+          <div>
+            <h2>Planners on Etsy</h2>
+            <ul>
+              <li><a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4614656729/2027-budget-planner-google-sheets-excel" rel="noopener" target="_blank">2027 Budget Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4603663745" rel="noopener" target="_blank">Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604086456" rel="noopener" target="_blank">Family Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604087324" rel="noopener" target="_blank">Snowboard Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604064801" rel="noopener" target="_blank">Alps and Europe Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>About</h2>
+            <p class="fine" style="margin-top:0">Kotlets makes editable Google Sheets and Excel planners, with matching printable pages, for trips and household budgets.</p>
+          </div>
+        </div>
+        <p class="fine" id="privacy">Privacy: this is a static site. Calculator inputs stay in your browser and are not sent to a server. There are no accounts, and no analytics or tracking cookies on these pages yet.</p>
+        <p class="fine">Pages and calculators on this site were created with help from AI tools. The numbers are estimates for personal planning only — they are not financial, tax or travel advice. Always check official prices, exchange rates and opening dates before you book.</p>
+        <p class="copy">© <span id="year">2026</span> Kotlets. Instant digital download planners on Etsy.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/calc.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

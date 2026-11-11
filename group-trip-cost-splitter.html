@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group Trip Cost Splitter — Who Owes Whom | Kotlets</title>
+  <meta name="description" content="Free group trip cost splitter: log who paid what, choose who shares each expense, and see who owes whom with as few payments as possible.">
+  <link rel="canonical" href="https://mozght.github.io/kotlets/group-trip-cost-splitter.html">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#17324D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kotlets">
+  <meta property="og:title" content="Group Trip Cost Splitter — Who Owes Whom | Kotlets">
+  <meta property="og:description" content="Free group trip cost splitter: log who paid what, choose who shares each expense, and see who owes whom with as few payments as possible.">
+  <meta property="og:url" content="https://mozght.github.io/kotlets/group-trip-cost-splitter.html">
+  <meta property="og:image" content="https://mozght.github.io/kotlets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Group Trip Cost Splitter — Who Owes Whom | Kotlets">
+  <meta name="twitter:description" content="Free group trip cost splitter: log who paid what, choose who shares each expense, and see who owes whom with as few payments as possible.">
+  <meta name="twitter:image" content="https://mozght.github.io/kotlets/img/og-image.png">
+  <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://mozght.github.io/kotlets/#org", "name": "Kotlets", "url": "https://mozght.github.io/kotlets/", "logo": "https://mozght.github.io/kotlets/img/logo.png", "description": "Digital travel and budget planners for Google Sheets and Excel, plus free trip calculators."}, {"@type": "WebSite", "@id": "https://mozght.github.io/kotlets/#site", "url": "https://mozght.github.io/kotlets/", "name": "Kotlets", "publisher": {"@id": "https://mozght.github.io/kotlets/#org"}}, {"@type": "WebApplication", "@id": "https://mozght.github.io/kotlets/group-trip-cost-splitter.html#app", "name": "Group Trip Cost Splitter", "url": "https://mozght.github.io/kotlets/group-trip-cost-splitter.html", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "description": "Free group trip cost splitter: log who paid what, choose who shares each expense, and see who owes whom with as few payments as possible.", "publisher": {"@id": "https://mozght.github.io/kotlets/#org"}, "browserRequirements": "Requires JavaScript.", "isAccessibleForFree": true}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mozght.github.io/kotlets/"}, {"@type": "ListItem", "position": 2, "name": "Group Trip Cost Splitter", "item": "https://mozght.github.io/kotlets/group-trip-cost-splitter.html"}]}, {"@type": "FAQPage", "@id": "https://mozght.github.io/kotlets/group-trip-cost-splitter.html#faq", "url": "https://mozght.github.io/kotlets/group-trip-cost-splitter.html", "mainEntity": [{"@type": "Question", "name": "How do you split a group trip fairly?", "acceptedAnswer": {"@type": "Answer", "text": "Add up what each person paid, then give each person an equal share of the expenses they actually took part in. The difference is the balance: a positive balance means they are owed money, a negative balance means they owe. This splitter then settles those balances with as few payments as possible."}}, {"@type": "Question", "name": "What if someone paid for a dinner that only two people ate?", "acceptedAnswer": {"@type": "Answer", "text": "Uncheck the people who should not share that expense. The amount is divided only among the names that remain. The person who paid can be in the split, or not — for example if they paid for two friends and were not eating themselves."}}, {"@type": "Question", "name": "How do you settle who owes whom without extra transfers?", "acceptedAnswer": {"@type": "Answer", "text": "The tool nets everything first, then matches the people who owe with the people who are owed, largest balances first. In a typical three-person trip you get one or two payments, not a web of IOUs for every receipt."}}, {"@type": "Question", "name": "Should we split as we go or at the end of the trip?", "acceptedAnswer": {"@type": "Answer", "text": "Either works. Logging receipts as you go is easier than reconstructing a week from memory. You can still make one settlement on the last morning, or when you are home and the last card payment has landed."}}, {"@type": "Question", "name": "Does the splitter handle different currencies?", "acceptedAnswer": {"@type": "Answer", "text": "Enter every amount in one currency. If a lunch was in zloty and the apartment was in euros, convert the lunch first. The Travel Planner can store each expense in its own currency and convert with rates you type in."}}]}]}</script>
+</head>
+<body>
+  <a class="skip" href="#calculator">Skip to calculator</a>
+  <div class="topbar" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/mascot.png" width="48" height="45" alt="">
+        <span class="brand-name">Kotlets</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul><li><a href="index.html">Home</a></li><li><a href="trip-budget-calculator.html">Trip budget</a></li><li><a href="group-trip-cost-splitter.html" aria-current="page">Group split</a></li><li><a href="ski-trip-cost-calculator.html">Ski trip cost</a></li><li><a href="vacation-savings-calculator.html">Vacation savings</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="kicker">Free calculator</p>
+      <h1>Group Trip Cost Splitter</h1>
+      <p class="lede">Log the people on the trip and who paid for each expense. Tick who should share the line, and get a short list of who pays whom. Nothing leaves your browser.</p>
+    </section>
+    <div id="calculator" class="wrap">
+      <div id="split-app"></div>
+    </div>
+    <section class="cta-box wrap">
+      <h2>Share the split with the group</h2>
+      <p>The <a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a> keeps travellers, bookings, a multi-currency budget and a group cost split in one file you can upload to Google Sheets.</p>
+      <p class="btn-row"><a class="btn" href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Get the Travel Planner on Etsy <span class="visually-hidden">(opens in a new tab)</span></a></p>
+    </section>
+    
+<article class="prose" id="guide">
+  <h2>How to split a group trip without a row about money</h2>
+  <p>The fair version of “we will settle up later” is a list, not a feeling. Write down who paid, what it was for, and who should share it. This group trip cost splitter does the arithmetic: it totals what each person paid, subtracts their share, and then tells you who should pay whom so everyone ends up even. Inputs stay in your browser; nothing is uploaded.</p>
+  <p>Start with the names of the people on the trip — not “the couple” as one unit unless they really do share one wallet. If two people pay from different cards, they need two names, or you will never know who is owed the last train ticket. You can add or remove people at any time. If you remove someone, they are taken out of future splits and you should also remove or reassign expenses they paid.</p>
+  <h3>Equal shares, and the exceptions</h3>
+  <p>Most group costs should be split equally: the apartment, the hire car, a city pass you all use. The important exceptions are meals that only some of you ate, optional activities, and anything one person chose as a gift or a personal extra. For those, uncheck the names who should not share the line. The amount is then divided only among the people who remain.</p>
+  <p>The person who paid does not have to be in the split. That covers the case where you put a friend’s museum ticket on your card, or you bought groceries for the apartment and will be paid back in full. The calculator still credits you with the payment and assigns the share to the people you ticked.</p>
+  <h3>Rounding and settlement</h3>
+  <p>Amounts that do not divide cleanly — a €10 pizza among three people — are handled in cents. Two people get €3.33 and one gets €3.34, so the shares add up to €10.00 exactly. The leftover cent goes to the first names in the split list. That is ordinary rounding, not a judgment about who ate more pizza.</p>
+  <p>Settlement is the last step. Instead of paying back every receipt, the tool nets all of the balances and matches debtors with creditors, largest first. If one person is owed €80 and the other two each owe €40, you will see two payments, not a loop of smaller IOUs. Pay those amounts (and note them) and the group is settled.</p>
+  <p>If you would rather keep the list in a spreadsheet you can share with the group — with bookings, cancelled rows left out of totals, and a running budget in five currencies — move the same names into the <a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Kotlets Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a>. The Group Split tab uses the travellers from Trip Overview so you do not type the names twice.</p>
+</article>
+
+    <section class='faq wrap' id='faq' aria-labelledby='faq-h'><h2 id='faq-h'>Frequently asked questions</h2><details><summary>How do you split a group trip fairly?</summary><p>Add up what each person paid, then give each person an equal share of the expenses they actually took part in. The difference is the balance: a positive balance means they are owed money, a negative balance means they owe. This splitter then settles those balances with as few payments as possible.</p></details><details><summary>What if someone paid for a dinner that only two people ate?</summary><p>Uncheck the people who should not share that expense. The amount is divided only among the names that remain. The person who paid can be in the split, or not — for example if they paid for two friends and were not eating themselves.</p></details><details><summary>How do you settle who owes whom without extra transfers?</summary><p>The tool nets everything first, then matches the people who owe with the people who are owed, largest balances first. In a typical three-person trip you get one or two payments, not a web of IOUs for every receipt.</p></details><details><summary>Should we split as we go or at the end of the trip?</summary><p>Either works. Logging receipts as you go is easier than reconstructing a week from memory. You can still make one settlement on the last morning, or when you are home and the last card payment has landed.</p></details><details><summary>Does the splitter handle different currencies?</summary><p>Enter every amount in one currency. If a lunch was in zloty and the apartment was in euros, convert the lunch first. The <a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a> can store each expense in its own currency and convert with rates you type in.</p></details></section>
+    <section class="related wrap" aria-labelledby="related-h"><h2 id="related-h">Related calculators</h2><ul><li><a href="trip-budget-calculator.html">Trip Budget Calculator — estimate the whole trip first</a></li><li><a href="vacation-savings-calculator.html">Vacation Savings Calculator — save the group pot</a></li><li><a href="ski-trip-cost-calculator.html">Ski Trip Cost Calculator — winter group costs</a></li></ul></section>
+  </main>
+
+  <footer class="site-footer">
+    <svg class="mtn" viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" preserveAspectRatio="none">
+  <path fill="#BAA8D6" d="M0 180V95l150-55 160 50 200-80 180 70 190-65 180 55 140-45V180Z"/>
+  <path fill="#17324D" d="M0 180V125l120-55 160 58 180-75 170 65 190-60 170 62 210-72V180Z"/>
+  <path fill="#fff" d="M150 40l-32 24 32 8 30-10zM510 10l-40 28 40 10 38-12zM880 20l-36 26 36 8 34-10zM460 53l-34 22 34 8 32-9zM840 55l-32 20 32 7 30-8z"/>
+</svg>
+    <div class="foot-body">
+      <div class="foot-inner">
+        <div class="foot-grid">
+          <div>
+            <h2>Calculators</h2>
+            <ul><li><a href="index.html">Home</a></li><li><a href="trip-budget-calculator.html">Trip Budget Calculator</a></li><li><a href="group-trip-cost-splitter.html">Group Trip Cost Splitter</a></li><li><a href="ski-trip-cost-calculator.html">Ski Trip Cost Calculator</a></li><li><a href="vacation-savings-calculator.html">Vacation Savings Calculator</a></li></ul>
+          </div>
+          <div>
+            <h2>Planners on Etsy</h2>
+            <ul>
+              <li><a href="https://www.etsy.com/listing/4614671910/travel-planner-spreadsheet-google-sheets" rel="noopener" target="_blank">Travel Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4614656729/2027-budget-planner-google-sheets-excel" rel="noopener" target="_blank">2027 Budget Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4603663745" rel="noopener" target="_blank">Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604086456" rel="noopener" target="_blank">Family Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604087324" rel="noopener" target="_blank">Snowboard Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+              <li><a href="https://www.etsy.com/listing/4604064801" rel="noopener" target="_blank">Alps and Europe Ski Trip Planner <span class="visually-hidden">(opens in a new tab)</span></a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>About</h2>
+            <p class="fine" style="margin-top:0">Kotlets makes editable Google Sheets and Excel planners, with matching printable pages, for trips and household budgets.</p>
+          </div>
+        </div>
+        <p class="fine" id="privacy">Privacy: this is a static site. Calculator inputs stay in your browser and are not sent to a server. There are no accounts, and no analytics or tracking cookies on these pages yet.</p>
+        <p class="fine">Pages and calculators on this site were created with help from AI tools. The numbers are estimates for personal planning only — they are not financial, tax or travel advice. Always check official prices, exchange rates and opening dates before you book.</p>
+        <p class="copy">© <span id="year">2026</span> Kotlets. Instant digital download planners on Etsy.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/calc.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
