@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mozght.github.io/kotlets/sitemap.xml
-
-
-
+Sitemap: https://downloadplanner.com/sitemap.xml

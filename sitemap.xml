@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mozght.github.io/kotlets/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://mozght.github.io/kotlets/trip-budget-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://mozght.github.io/kotlets/group-trip-cost-splitter.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://mozght.github.io/kotlets/ski-trip-cost-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://mozght.github.io/kotlets/vacation-savings-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://downloadplanner.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://downloadplanner.com/trip-budget-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://downloadplanner.com/group-trip-cost-splitter.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://downloadplanner.com/ski-trip-cost-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://downloadplanner.com/vacation-savings-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>
