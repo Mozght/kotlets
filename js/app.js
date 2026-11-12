@@ -31,12 +31,21 @@
   function val(id) { return el(id) ? el(id).value : ""; }
   function money(n, cur) { return C.formatMoney(n, cur); }
 
+  function trackCalculatorUsed() {
+    if (window.KotletsAnalytics && typeof KotletsAnalytics.trackCalculatorUsed === "function") {
+      KotletsAnalytics.trackCalculatorUsed();
+    }
+  }
+
   function bind(form, render) {
     if (!form) return;
-    var run = function () { render(); };
-    form.addEventListener("input", run);
-    form.addEventListener("change", run);
-    form.addEventListener("submit", function (e) { e.preventDefault(); render(); });
+    var onUser = function () {
+      render();
+      trackCalculatorUsed();
+    };
+    form.addEventListener("input", onUser);
+    form.addEventListener("change", onUser);
+    form.addEventListener("submit", function (e) { e.preventDefault(); onUser(); });
     render();
   }
 
@@ -388,6 +397,13 @@
         return "<option value='" + k + "'" + (k === cur ? " selected" : "") + ">" + m.name + " (" + m.code + ")</option>";
       }).join("");
     }
+    splitRoot.addEventListener("input", trackCalculatorUsed);
+    splitRoot.addEventListener("change", trackCalculatorUsed);
+    splitRoot.addEventListener("click", function (e) {
+      var t = e.target;
+      if (t && t.closest && t.closest("button")) trackCalculatorUsed();
+    });
+
     renderSplit();
   }
 })();
